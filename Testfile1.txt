@@ -1,0 +1,14 @@
+    lw    0,2,3    # register0 <- mem(register2 + 3)
+    lw    1,4,5    # register1 <- mem(register4 + 5)
+    lw    15,1,4    #register15 <- mem(register1 + 4)
+    addi    4,0,0    #r4=0
+    addi    1,0,0    #r1=1
+    addi    2,0,1    #r2=1
+start    addi    3,0,1    #r3=1    
+    addi    2,2,1    #r2++    
+    addi    3,3,4    #r3=5    
+    slt    4,3,1    #long    
+    add    4,2,0    #r4=r2    
+    addi    2,0,0    #r2=0    
+    j    start    #jump    
+exit    sw    2,4,0    #Sw    
